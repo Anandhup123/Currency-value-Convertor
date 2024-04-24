@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Currency Conversion"
+        android:layout_marginTop="56dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#f60"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bg2"/>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:background="#FFDAAB"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittextbg"
+        android:ems="10"
+        android:hint="Amount(INR)"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp">
+
+        <RadioButton
+            android:id="@+id/usd"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="USD" />
+
+        <RadioButton
+            android:id="@+id/euro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="EURO" />
+
+        <RadioButton
+            android:id="@+id/gbp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="GBP" />
+
+        <RadioButton
+            android:id="@+id/kwd"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="KWD" />
+
+    </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/convert"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button"
+        android:text="convert" />
+
+
+</LinearLayout>
